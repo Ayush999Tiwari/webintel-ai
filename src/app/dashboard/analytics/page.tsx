@@ -71,7 +71,7 @@ interface AnalyticsData {
   contentStats: ContentData | null;
 }
 
-const API_BASE = "http://localhost:8000/analytics";
+const API_BASE = " https://web-scrapper-12.onrender.com/analytics";
 const COLORS = ["#F43F5E", "#F59E0B", "#8B5CF6", "#64748B", "#0EA5E9", "#CBD5E1"];
 
 const EMPTY_DATA: AnalyticsData = {

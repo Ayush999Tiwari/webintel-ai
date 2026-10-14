@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { Globe, Mail, Lock, User, Eye, EyeOff } from "lucide-react";
 
 const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "http://127.0.0.1:8000";
+  process.env.NEXT_PUBLIC_API_BASE_URL || " https://web-scrapper-12.onrender.com";
 
 export default function SignupPage() {
   const router = useRouter();

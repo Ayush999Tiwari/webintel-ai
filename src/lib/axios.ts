@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Matches the API_BASE_URL used in src/app/login/page.tsx and signup/page.tsx
 export const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://127.0.0.1:8000";
+  process.env.NEXT_PUBLIC_API_BASE_URL ?? " https://web-scrapper-12.onrender.com";
 
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,
