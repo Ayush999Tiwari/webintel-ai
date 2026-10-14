@@ -67,7 +67,7 @@ export default function HistoryPage() {
     setIsLoading(true);
     setError(null);
     try {
-      const res = await fetch(" https://web-scrapper-12.onrender.com/history");
+      const res = await fetch(" http://localhost:8000/history");
       if (!res.ok) throw new Error(`Failed to fetch history (${res.status})`);
       const data: RawCrawlRecord[] = await res.json();
       const normalized = (Array.isArray(data) ? data : []).map(normalizeRecord);

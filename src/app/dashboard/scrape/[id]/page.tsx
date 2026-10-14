@@ -54,7 +54,7 @@ export default function ScrapeDetailPage() {
       setIsLoading(true);
       setError(null);
       try {
-        const res = await fetch(` https://web-scrapper-12.onrender.com/scrape/${scrapeId}`);
+        const res = await fetch(` http://localhost:8000/scrape/${scrapeId}`);
         if (!res.ok) throw new Error(`Failed to load scrape (status ${res.status})`);
         const data: ScrapeDetail = await res.json();
         setScrape(data);

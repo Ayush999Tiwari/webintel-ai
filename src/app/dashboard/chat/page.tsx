@@ -14,7 +14,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-const API = " https://web-scrapper-12.onrender.com";
+const API = " http://localhost:8000";
 
 type Source = {
   url?: string;
