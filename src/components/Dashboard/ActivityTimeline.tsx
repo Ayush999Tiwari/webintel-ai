@@ -9,6 +9,7 @@ const DOT_COLOR: Record<CrawlStatus, string> = {
   running: "bg-blue-500",
   failed: "bg-red-500",
   pending: "bg-amber-500",
+  partial: ""
 };
 
 const VERB: Record<CrawlStatus, string> = {
@@ -16,6 +17,7 @@ const VERB: Record<CrawlStatus, string> = {
   running: "is being crawled",
   failed: "failed to crawl",
   pending: "queued for crawl",
+  partial: ""
 };
 
 interface ActivityEvent {

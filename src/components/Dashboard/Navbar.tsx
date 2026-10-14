@@ -1,6 +1,7 @@
 "use client";
 
-import { Search, Bell, Moon } from "lucide-react";
+import { Search, Bell, Moon, Home } from "lucide-react";
+import Link from "next/link";
 
 export function Navbar() {
   return (
@@ -17,6 +18,16 @@ export function Navbar() {
       </div>
 
       <div className="flex items-center gap-2 md:gap-3">
+        {/* 👇 Home Button Added Here 👇 */}
+        <Link
+          href="/"
+          title="Back to Home"
+          aria-label="Back to Home"
+          className="flex h-10 w-10 items-center justify-center rounded-xl border border-gray-200 text-gray-500 transition-all hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200"
+        >
+          <Home className="h-4.5 w-4.5" />
+        </Link>
+
         <span className="hidden items-center gap-1.5 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 sm:inline-flex">
           Pro Plan
         </span>

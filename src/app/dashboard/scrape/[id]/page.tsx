@@ -378,15 +378,15 @@ export default function ScrapeDetailPage() {
                         <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400">
                           {key}
                         </p>
-                        <p className="mt-1.5 break-words text-sm font-medium text-gray-900">
-                          {typeof value === "object" ? (
-                            <pre className="whitespace-pre-wrap font-mono text-xs text-gray-700">
-                              {JSON.stringify(value, null, 2)}
-                            </pre>
-                          ) : (
-                            String(value)
-                          )}
-                        </p>
+                        <div className="mt-1.5 break-words text-sm font-medium text-gray-900">
+  {typeof value === "object" ? (
+    <pre className="whitespace-pre-wrap font-mono text-xs text-gray-700">
+      {JSON.stringify(value, null, 2)}
+    </pre>
+  ) : (
+    <p>{String(value)}</p>
+  )}
+</div>
                       </motion.div>
                     ))}
                   </div>
